@@ -9,4 +9,4 @@ JavaScript (*简称 JS *)是一种能够让网页响应用户交互的编程语�
 
 **Note:** 这本开源的书来自 [GitBook](http://www.gitbook.io)。
 
-**自我说明:** 这是我第一次进行开源翻译项目，现在是一个人，也欢迎有其他人加入这个项目。还希望大家指出翻译错误的地方，有问题可以在[GitHub](https://github.com/xinqiu/Learn-Javascript)中提出。  
+**自我说明:** 这是我第一次进行开源翻译项目，现在是一个人，也欢迎有其他人加入这个项目。还希望大家指出翻译错误的地方，有问题可以在[GitHub](https://github.com/xinqiu/Learn-Javascript)中提出。 最后，感谢本书作者Gitbook公司提供这套教程。
