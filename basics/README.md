@@ -2,11 +2,12 @@
 
 在第一章，我们将学习Javascript的编程基础。
 
-Programming means writing code. A book is made up of chapters, paragraphs, sentences, phrases, words and finally punctuation and letters, likewise a program can be broken down into smaller and smaller components. For now, the most important is a statement. A statement is analogous to a sentence in a book. On its own, it has structure and purpose, but without the context of the other statements around it, it isn't that meaningful.
+编程其实就是敲代码。就像一本书是包含章节，段落，句子，短语，单词最终由字母组成的一样，程序也能被切分成一块块更小的部分。对于程序，最重要的声明。声明等同于书中的句子。单独看，句子有结构和议题。但脱离了上下文，它却没有该有的意义。
 
-A statement is more casually (and commonly) known as a *line of code*. That's because statements tend to be written on individual lines. As such, programs are read from top to bottom, left to right. You might be wondering what code (also called source code) is. That happens to be a broad term which can refer to the whole of the program or the smallest part. Therefore, a line of code is simply a line of your program.
+声明，即非正式的(广泛的)被认为就是*一行代码*。因为声明通常被写在同一行。正是这样，程序代码通常从上到下，从左往右读。你可能会惊讶什么是代码(也就是源代码)。这是个广泛的术语，指的可以是整个程序也可以是其中最小的部分。因此，一行代码简单的说就是一行你的程序。
 
-Here is a simple example:
+
+举个例子：
 
 ```javascript
 var hello = "Hello";
@@ -16,4 +17,4 @@ var world = "World";
 var message = hello + " " + world;
 ```
 
-This code can be executed by another program called an *interpreter* that will read the code, and execute all the statements in the right order.
+这段代码能被 *解释器* 执行，并且按照正确的顺序来执行。
