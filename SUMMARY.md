@@ -1,9 +1,9 @@
 # Summary
 
 * [基础](basics/README.md)
-    * [Comments](basics/comments.md)
-    * [Variables](basics/variables.md)
-    * [Types](basics/types.md)
+    * [注释](basics/comments.md)
+    * [变量](basics/variables.md)
+    * [数据类型](basics/types.md)
 * [数字](numbers/README.md)
     * [Creation](numbers/create.md)
     * [Basic Operators](numbers/operators.md)
