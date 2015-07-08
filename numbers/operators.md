@@ -1,17 +1,16 @@
-# Operators
+# 基本运算符
 
-You can apply mathematic operations to numbers using some basic operators like:
+你可以对数字使用一些简单的数学运算符比如：
 
-* **Addition**: ```c = a + b```
-* **Subtraction**: ```c = a - b```
-* **Multiplication**: ```c = a * b```
-* **Division**: ```c = a / b```
+* **加**: ```c = a + b```
+* **减**: ```c = a - b```
+* **乘**: ```c = a * b```
+* **除**: ```c = a / b```
 
-You can use parentheses just like in math to separate and group expressions: ```c = (a / b) + d```
-
+你可以像在数学中一样，使用括号分隔进行分隔比如：```c = (a / b) + d```
 
 {% exercise %}
-Create a variable `x` equal to the sum of `a` and `b` divided by `c` and finally multiplied by `d`.
+创建一个变量 `x` ，它的值为`a` 和 `b` 之和再被 `c` 除，最后乘上 `d`.
 {% initial %}
 var a = 2034547;
 var b = 1.567;
