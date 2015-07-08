@@ -4,7 +4,7 @@
     * [注释](basics/comments.md)
     * [变量](basics/variables.md)
     * [数据类型](basics/types.md)
-    * [表达式](basics/equality.md)
+    * [等式](basics/equality.md)
 * [数字](numbers/README.md)
     * [创建](numbers/create.md)
     * [基本运算符](numbers/operators.md)
