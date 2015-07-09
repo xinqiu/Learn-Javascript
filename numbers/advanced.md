@@ -1,19 +1,18 @@
-# Advanced Operators
+# 高级运算符
 
-Some advanced operators can be used, such as:
+一些高级的运算符可以这样用，比如：
 
-* **Modulus (division remainder)**: ```x = y % 2```
-* **Increment**: Given a = 5
-    * ```c = a++```, Results: c = 5 and a = 6
-    * ```c = ++a```, Results: c = 6 and a = 6
-* **Decrement**: Given a = 5
-    * ```c = a--```, Results: c = 5 and a = 4
-    * ```c = --a```, Results: c = 4 and a = 4
+* **求余 (除法的余数)**: ```x = y % 2```
+* **累加**: 让 a = 5
+    * ```c = a++```, 结果: c = 5 和 a = 6
+    * ```c = ++a```, 结果: c = 6 和 a = 6
+* **递减**: 让 a = 5
+    * ```c = a--```, 结果: c = 5 和 a = 4
+    * ```c = --a```, 结果: c = 4 和 a = 4
 
-
-
+    
 {% exercise %}
-Define a variable `c` as the modulus of the decremented value of `x` by 3.
+定义一个变量 `c` 作为自减变量 `x` 对3的模。
 {% initial %}
 var x = 10;
 
