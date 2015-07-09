@@ -1,11 +1,9 @@
-# Strings
+# 字符串
 
-JavaScript strings share many similarities with string implementations from other high-level languages. They represent text based messages and data.
+JavaScript的字符串与其他高级语言字符串的实现类似。这表示文本基于消息和数据。
 
-In this course we will cover the basics. How to create new strings and perform common operations on them.
-
-Here is an example of a string:
-
+在这章节将涉及一些基础。关于如何创建新的字符串和常见的一些字符串处理。
+以下是是一个例子：
 ```javascript
 "Hello World"
 ```
