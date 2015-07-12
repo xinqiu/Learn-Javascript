@@ -1,26 +1,26 @@
-# Creation
+# 创建
 
-You can define strings in JavaScript by enclosing the text in single quotes or double quotes:
+你可以在Javascript中，通过单引号或双引号定义字符串：
 
 ```js
-// Single quotes can be used
+// 可以用单引号
 var str = 'Our lovely string';
 
-// Double quotes as well
+// 也可以用双引号
 var otherStr = "Another nice string";
 ```
 
-In Javascript, Strings can contain UTF-8 characters:
+在Javascript中，字符串可以使用UTF-8编码：
 
 ```js
 "中文 español English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어";
 ```
 
 
-**Note:** Strings can not be subtracted, multiplied or divided.
+**注意:** 字符串不能进行减，乘或除的运算。
 
 {% exercise %}
-Create a variable named `str` set to the value `"abc"`.
+创建一个名为 `str` 的变量，值为 `"abc"` 。
 {% solution %}
 var str = 'abc';
 {% validation %}
