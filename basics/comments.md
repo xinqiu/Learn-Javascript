@@ -7,7 +7,7 @@
 * 单行注释用 `//`:
 
 ```javascript
-// This is a comment, it will be ignored by the interpreter
+// 这是注释，将被解释器忽略
 var a = "this is a variable defined in a statement";
 ```
 
@@ -15,8 +15,8 @@ var a = "this is a variable defined in a statement";
 
 ```javascript
 /*
-This is a multi-line comment,
-it will be ignored by the interpreter
+这是多行注释，
+将被解释器忽略
 */
 var a = "this is a variable defined in a statement";
 ```

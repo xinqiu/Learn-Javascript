@@ -4,10 +4,10 @@
 
 数字可以被创建来自一个常量：
 ```
-// This is a float:
+// 这是浮点型:
 var a = 1.2;
 
-// This is an integer:
+// 这是整型:
 var b = 10;
 ```
 
