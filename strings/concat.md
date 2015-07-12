@@ -1,13 +1,13 @@
-# Concatenation
+# 连接
 
-Concatenation involves adding two or more strings together, creating a larger string containing the combined data of those original strings. This is done in JavaScript using the **+** operator.
+连接同时涉及两个或以上字符串，创建了一个组合这些原始数据的更长的字符串。在Javascript中使用 **+** 运算符。	
 
 ```js
 var bigStr = 'Hi ' + 'JS strings are nice ' + 'and ' + 'easy to add';
 ```
 
 {% exercise %}
-Add up the different names so that the `fullName` variable contains John's complete name.
+连接不同的名字，这样变量 `fullName` 就包含了John的全名。
 {% initial %}
 var firstName = "John";
 var lastName = "Smith";
