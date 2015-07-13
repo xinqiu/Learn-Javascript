@@ -1,9 +1,9 @@
-# Conditional Logic
+# 条件逻辑
 
-A condition is a test for something. Conditions are very important for programming, in several ways:
+条件语句可以用来测试。条件判断在编程中非常重要，比如：
 
-First of all conditions can be used to ensure that your program works, regardless of what data you throw at it for processing. If you blindly trust data, you’ll get into trouble and your programs will fail. If you test that the thing you want to do is possible and has all the required information in the right format, that won’t happen, and your program will be a lot more stable. Taking such precautions is also known as programming defensively.
+首先，无论程序运行使用什么数据，所有的条件都能被用来确定程序是否正常。如果盲目的相信数据，你将陷入程序出错的麻烦。如果测试有效并且所需信息格式正确，程序就不会出错，还会变得更稳定。防御编程就是保持警惕。
 
-The other thing conditions can do for you is allow for branching. You might have encountered branching diagrams before, for example when filling out a form. Basically, this refers to executing different “branches” (parts) of code, depending on if the condition is met or not.
+另一种条件判断的作用就是分支。你可能已经接触过分支图，比如填写表格时。基本上这指的是依赖if条件语句执行不同的代码分支。
 
-In this chapter, we'll learn the base of conditional logic in Javascript.
+在这个章节，我们将会学习Javascript中条件逻辑的基础。
