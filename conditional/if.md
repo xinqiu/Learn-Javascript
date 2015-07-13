@@ -1,7 +1,6 @@
-# Condition If
+# If
 
-The easiest condition is an if statement and its syntax is `if(condition){ do this … }`. The condition has to be true for the code inside the curly braces to be executed. You can for example test a string and set the value of another string dependent on its value:
-
+最简单的条件判断是if语句，语法是 `if(condition){ do this … }` 。条件判断为真，才执行分支中的代码。举个字符串的例子：
 ```javascript
 var country = 'France';
 var weather;
@@ -31,10 +30,10 @@ var message = 'this is ' + country + ', the weather is ' +
             'currency is ' + currency;
 ```
 
-**Note:** Conditions can also be nested.
+**注意:** 条件判断可以嵌套。
 
 {% exercise %}
-Fill up the value of `name` to validate the condition.
+填写 `name` 的值，验证条件判断。
 {% initial %}
 var name =
 
