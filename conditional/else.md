@@ -1,6 +1,6 @@
 # Else
 
-There is also an `else` clause that will be applied when the first condition isn’t true. This is very powerful if you want to react to any value, but single out one in particular for special treatment:
+当第一个条件语句不成立时， `else` 语句将被执行。如果你想要在特殊条件下才返回一个值，这非常有效：
 
 ```javascript
 var umbrellaMandatory;
@@ -12,7 +12,7 @@ if(country === 'England'){
 }
 ```
 
-The `else` clause can be joined with another `if`. Lets remake the example from the previous article:
+`else` 语句可以和另一个 `if` 语句结合。改造一下上面的例子：
 
 ```javascript
 if(country === 'England') {
@@ -24,9 +24,8 @@ if(country === 'England') {
 }
 ```
 
-
 {% exercise %}
-Fill up the value of `name` to validate the `else` condition.
+填写 `name` 的值，验证 `else` 语句。
 {% initial %}
 var name =
 
