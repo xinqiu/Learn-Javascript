@@ -1,12 +1,12 @@
-# Arrays
+# 数组
 
-Arrays are a fundamental part of programming. An array is a list of data. We can store a lot of data in one variable, which makes our code more readable and easier to understand. It also makes it much easier to perform functions on related data.
+数组是编程的基础部分。一个数组就是一系列数据。我们可以储存许多数据在一个变量中，这提高了代码可读性，让人更好理解代码。这使相关数据传递到函数中执行更简单。
 
-The data in arrays are called **elements**.
+数组中数据称为 **元素**。
 
-Here is a simple array:
+这是一个简单的数组：
 
 ```javascript
-// 1, 1, 2, 3, 5, and 8 are the elements in this array
+// 1, 1, 2, 3, 5 和 8 是数组中的元素
 var numbers = [1, 1, 2, 3, 5, 8];
 ```
