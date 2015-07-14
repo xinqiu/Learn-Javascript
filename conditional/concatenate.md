@@ -1,10 +1,10 @@
-# Concatenate conditions
+# 条件连接
 
-Furthermore you can concatenate different conditions with "or” or “and” statements, to test whether either statement is true, or both are true, respectively.
+此外，你可以用 "or” 或 “and” 语句连接不同的条件判断，可以分别的测试是否存在一个为真或同为真。
 
-In JavaScript “or” is written as `||` and “and” is written as `&&`.
+在Javascript中，“or” 可以被写成 `||` ， “and” 可以被写成 `&&`。
 
-Say you want to test if the value of x is between 10 and 20—you could do that with a condition stating:
+比如你想要测试 x 的值是否在10到20之间，你可以用上述的方法：
 
 ```
 if(x > 10 && x < 20) {
@@ -12,7 +12,7 @@ if(x > 10 && x < 20) {
 }
 ```
 
-If you want to make sure that country is either “England” or “Germany” you use:
+如果你想要确认 country 是 “England” 或 “Germany”：
 
 ```
 if(country === 'England' || country === 'Germany') {
@@ -20,10 +20,10 @@ if(country === 'England' || country === 'Germany') {
 }
 ```
 
-**Note**: Just like operations on numbers, Condtions can be grouped using parenthesis, ex: ```if ( (name === "John" || name === "Jennifer") && country === "France")```.
+**注意**: 就像对数字的运算符，条件可以用括号来分组，比如： ```if ( (name === "John" || name === "Jennifer") && country === "France")```。
 
 {% exercise %}
-Fill up the 2 conditions so that `primaryCategory` equals `"E/J"` only if name equals `"John"` and country is `"England"`, and so that `secondaryCategory` equals `"E|J"` only if name equals `"John"` or country is `"England"`
+填写两个条件让仅当name 为 `"John"` ，country 为 `"England"`，`primaryCategory` 才等于  `"E/J"` ，仅当name 为 `"John"` 或 country 为 `"England"`， `secondaryCategory` 才等于  `"E/J"` 。
 {% initial %}
 var name = "John";
 var country = "England";
