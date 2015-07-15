@@ -1,14 +1,14 @@
-# While Loop
+# While 循环
 
-While Loops repetitively execute a block of code as long as a specified condition is true.
+只要特殊条件为真，While循环就一直执行代码块。
 
 ```javascript
 while(condition){
-    // do it as long as condition is true
+    // 只要条件为真就继续执行
 }
 ```
 
-For example, the loop in this example will repetitively execute its block of code as long as the variable i is less than 5:
+举个例子，以下代码会一直执行，只要变量 i 小于5： 
 
 ```javascript
 var i = 0, x = "";
@@ -18,20 +18,20 @@ while (i < 5) {
 }
 ```
 
-The Do/While Loop is a variant of the while loop. This loop will execute the code block once before checking if the condition is true. It then repeats the loop as long as the condition is true:
+Do/While循环是while循环的变体。这种循环将先检查条件是否为真，再执行代码块。它将重复循环只要条件为真：
 
 ```javascript
 do {
-    // code block to be executed
+    // 代码块被执行
 } while (condition);
 ```
 
 
-**Note**: Be careful to avoid infinite looping if the condition is always true!
+**注意**: 要注意避免如果条件总为真导致的无限循环！
 
 
 {% exercise %}
-Using a while-loop, create a variable named `message` that equals the concatenation of integers (0, 1, 2, ...) as long as its length (`message.length`) is less than 100.
+使用while循环，创建一个 `message` 变量，保存连接的整数，仅当长度小于100。
 {% initial %}
 var message = "";
 {% solution %}
