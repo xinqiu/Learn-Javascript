@@ -1,6 +1,5 @@
-# Functions
+# 函数
 
-Functions, are one of the most powerful and essential notions in programming.
+函数是编程中功能最强大也是最重要的概念之一。
 
-Functions like mathematical functions perform transformations, they take input values called **arguments** and **return** an output value.
-
+函数就像数学中的函数，有输入值即 **参数** ，**返回**输出值。
