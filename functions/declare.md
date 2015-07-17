@@ -1,6 +1,6 @@
-# Declaring Functions
+# 函数声明
 
-Functions, like variables, must be declared. Let's declare a function `double` that accepts an **argument** called `x` and **returns** the double of x :
+如同变量，函数必须被声明。以下是声明一个接受 **参数** `x` **返回** 浮点型x的 `double` 函数： 
 
 ```javascript
 function double(x) {
@@ -8,9 +8,9 @@ function double(x) {
 }
 ```
 
->*Note:* the function above **may** be referenced before it has been defined.
+>*注意:* 上述函数**可能**在声明之前被引用。 
 
-Functions are also values in JavaScript; they can be stored in variables (just like numbers, strings, etc ...) and given to other functions as arguments :
+函数在Javascript中也是变量；可以储存值（比如数字，字符串等等），将其作为参数传给其他函数：	
 
 ```javascript
 var double = function(x) {
@@ -18,10 +18,10 @@ var double = function(x) {
 };
 ```
 
->*Note:* the function above **may not** be referenced before it is defined, just like any other variable.
+>*注意:* 上述函数**可能不可以**在声明之前被引用，就像其他变量。
 
 {% exercise %}
-Declare a function named `triple` that takes an argument and returns its triple.
+声明一个 `triple` 函数，接受一个参数，返回它的三倍。
 {% solution %}
 var triple = function(x) {
     return x * 3;
