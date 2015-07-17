@@ -1,13 +1,12 @@
-# Higher Order Functions
+# 高阶函数
 
-Higher order functions are functions that manipulate other functions.
-For example, a function can take other functions as arguments and/or produce a function as its return value.
-Such *fancy* functional techniques are powerful constructs available to you in JavaScript and other high-level languages like python, lisp, etc.
+举个例子，一个函数可以将其他函数作为参数和/或产生一个函数作作为它的返回值。
+*fancy* 功能技术是非常强大的构造，可在Javascript或其他高级语言比如python，lisp等中使用。 
 
-We will now create two simple functions, `add_2` and `double`, and a higher order function called `map`. `map` will accept two arguments, `func` and `list` (its declaration will therefore begin `map(func,list)`), and return an array. `func` (the first argument) will be a function that will be applied to each of the elements in the array `list` (the second argument).
+我们来创建两个简单的函数，`add_2` 和 `double` ，和一个高阶函数 `map` 。`map` 接受两个参数，`func` 和 `list` （它的声明因此为`map(func,list)`），返回一个数组。`func` (第一个参数)作为函数将被应用到每个数组 `list`（第二个参数）的元素中。 
 
 ```javascript
-// Define two simple functions
+// 定义两个简单函数
 var add_2 = function(x) {
     return x + 2;
 };
@@ -15,11 +14,11 @@ var double = function(x) {
     return 2 * x;
 };
 
-// map is cool function that accepts 2 arguments:
-//  func    the function to call
-//  list    a array of values to call func on
+//  map接受两个参数
+//  func    调用函数
+//  list    数组中元素值传递给 func 
 var map = function(func, list) {
-    var output=[];              // output list
+    var output=[];              // 输出 list
     for(idx in list) {
         output.push( func(list[idx]) );
     }
@@ -27,15 +26,15 @@ var map = function(func, list) {
 }
 
 
-// We use map to apply a function to an entire list
-// of inputs to "map" them to a list of corresponding outputs
+// 使用map将函数应用于整个输入列表
+// 产生相应的输出列表
 map(add_2, [5,6,7]) // => [7, 8, 9]
 map(double, [5,6,7]) // => [10, 12, 14]
 ```
 
-The functions in the above example are simple. However, when passed as arguments to other functions, they can be composed in unforeseen ways to build more complex functions.
+上述例子中的函数很简单。然而在作为参数传递给其他函数时，可以使用特殊组合方法构件更复杂的函数。
 
-For example, if we notice that we use the invocations `map(add_2, ...)` and `map(double, ...)` very often in our code, we could decide we want to create two special-purpose list processing functions that have the desired operation baked into them. Using function composition, we could do this as follows:
+举个例子，如果注意到在代码中平凡使用调用方法`map(add_2, ...)` 和 `map(double, ...)`，可以创建两个特殊用途的列表运行组合起来的函数。使用函数封装，可以如下操作：
 
 ```javascript
 process_add_2 = function(list) {
@@ -48,21 +47,20 @@ process_add_2([5,6,7]) // => [7, 8, 9]
 process_double([5,6,7]) // => [10, 12, 14]
 ```
 
-Now let's create a function called `buildProcessor` that takes a function `func` as input
-and returns a `func`-processor, that is, a function that applies `func` to each input in list.
+创建一个 `buildProcessor` 函数，它将函数 `func` 作为函数，返回一个 `func`处理程序，这个函数将列表作为输入应用到 `func` 。
 
 ```javascript
-// a function that generates a list processor that performs
+// 函数产生一系列处理程序
 var buildProcessor = function(func) {
     var process_func = function(list) {
         return map(func, list);
     }
     return process_func;
 }
-// calling buildProcessor returns a function which is called with a list input
+// 调用buildProcessor返回一个调用输入列表的函数
 
 
-// using buildProcessor we could generate the add_2 and double list processors as follows:
+// 使用buildProcessor产生 add_2 process_double：
 process_add_2 = buildProcessor(add_2);
 process_double = buildProcessor(double);
 
@@ -70,9 +68,8 @@ process_add_2([5,6,7]) // => [7, 8, 9]
 process_double([5,6,7]) // => [10, 12, 14]
 ```
 
-
-Let's look at another example.
-We'll create a function called `buildMultiplier` that takes a number `x` as input and returns a function that multiplies its argument by `x` :
+看另一个例子。
+创建一个 `buildMultiplier` 函数，将 `x` 作为输入，然后一个对其参数 `x` 相乘的函数：
 
 ```javascript
 var buildMultiplier = function(x) {
@@ -89,7 +86,7 @@ triple(3); // => 9
 ```
 
 {% exercise %}
-Define a function named `negate` that takes `add1` as argument and returns a function, that returns the negation of the value returned by `add1`. (Things get a bit more complicated ;) )
+定义一个 `negate` 函数将 `add1` 作为参数，返回一个函数,这个函数通过 `add1` 返回值的相反数.(开始有点复杂了)
 {% initial %}
 var add1 = function (x) {
     return x + 1;
@@ -99,8 +96,8 @@ var negate = function(func) {
     // TODO
 };
 
-// Should return -6
-// Because (5+1) * -1 = -6
+// 应该返回 -6
+// 因为 (5+1) * -1 = -6
 negate(add1)(5);
 
 {% solution %}
