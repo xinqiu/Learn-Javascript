@@ -1,5 +1,5 @@
-# Properties
-Object's property is a `propertyName`: `propertyValue` pair, where **property name can be only a string**. If it's not a string, it gets casted into a string. You can specify properties **when creating** an object **or later**. There may be zero or more properties separated by commas.
+# 属性
+对象的属性是一对的`propertyName(属性名)`: `propertyValue(属性值)`，**属性的名字只能是字符串**。如果不是字符串，将会转换为字符串。可以在创建对象或之后初始化属性。
 ```js
 var language = {
     name: 'JavaScript',
@@ -9,27 +9,30 @@ var language = {
         firstName: 'Brendan',
         lastName: 'Eich'
     },
- // Yes, objects can be nested!
+ // 是的，对象可以嵌套！
     getAuthorFullName: function(){
-        return this.author.firstName + " " + this.author.lastName;    
+        return this.author.firstName + " " + this.author.lastName;
     }
- // Yes, functions can be values too!
+ // 是的，函数可以有值！
 };
 
 ```
-The following code demonstates how to **get** a property's value.
+
+以下代码展示如何 **获取** 属性的值。
+
 ```js
 var variable = language.name;
- // variable now contains "JavaScript" string.
+ // 变量包含字符串"JavaScript"
     variable = language['name'];
- // The lines above do the same thing. The difference is that the second one lets you use litteraly any string as a property name, but it's less readable. 
+ // 这行代码和上行功能一样。不同之处在于这行代码将书面化的字符串作为属性名，不过缺少可读性。
     variable = language.newProperty; 
- // variable is now undefined, because we have not assigned this property yet.
+ // 变量没定义，因为该属性没赋值。
 ```
-The following example shows how to **add** a new property **or change** an existing one.
+
+以下代码展示如何**添加**一个新属性或**改变**一个存在的属性。
 ```js
 language.newProperty = 'new value';
- // Now the object has a new property. If the property already exists, its value will be replaced.
+ // 现在对象有一个新的属性。如果该属性已经存在，值将会被替换。
 language['newProperty'] = 'changed value';
- // Once again, you can access properties both ways. The first one (dot notation) is recomended.
+ // 两以上种方法都可以使用，更推荐第一种(使用`.`)。
 ```
