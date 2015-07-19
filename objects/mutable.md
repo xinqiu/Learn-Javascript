@@ -1,5 +1,4 @@
 # 可变性
-The difference between objects and primitive values is that **we can change objects**, whereas primitive values are immutable.
 对象与原始值不同之处在于**对象可以改变**，而原始值不可改变。
 ```js
 var myPrimitive = "first value";
