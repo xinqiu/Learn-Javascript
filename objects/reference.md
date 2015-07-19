@@ -1,20 +1,18 @@
-# Reference
-Objects are **never copied**. They are passed around by reference.
+# 引用
+对象是**不可复制**的。它们的传递靠引用。
 ```js
- // Imagine I had a pizza
+ // 假设我有一个匹萨
 var myPizza = {slices: 5};
- // And I shared it with You
+ // 然后我和你分析它
 var yourPizza = myPizza;
- // I eat another slice
+ // 我吃了一小片
 myPizza.slices = myPizza.slices - 1;
 var numberOfSlicesLeft = yourPizza.slices;
- // Now We have 4 slices because myPizza and yourPizza
- // reference to the same pizza object.
+ // 我们总共有4片
+ // 因为我们引用了同一块匹萨
 var a = {}, b = {}, c = {};
- // a, b, and c each refer to a
- // different empty object
+ // a, b, 和 c 都引用不同的空对象
 a = b = c = {};
- // a, b, and c all refer to
- // the same empty object
+ // a, b, 和 c 都引用同一个空对象
 
 ```
