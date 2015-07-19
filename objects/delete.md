@@ -1,14 +1,13 @@
-# Delete
-`delete` can be used to **remove a property** from an object. It will remove a property from the
-object if it has one. It will not look further in the prototype chain.
-Removing a property from an object may allow a property from the prototype chain to shine through:
+# 销毁
+`销毁` 被用来从一个对象中 **删除一个属性** 。
+从一个对象中删除一个属性就是将改属性从原型中移出：
 ```js
 var adult = {age:26},
     child = Object.create(adult);
     child.age = 8;
 
 delete child.age;
- /* Remove age property from child, revealing the age of the prototype, because then it is not overriden. */
+ /* 从child中删除age属性，表明这之后该属性不在被覆盖 */
 var prototypeAge = child.age;
- // 26, because child does not have its own age property.
+ // 26，因为该孩子没有自己的age属性。
 ```
