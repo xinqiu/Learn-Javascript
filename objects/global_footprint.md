@@ -1,7 +1,8 @@
-# Global footprint
-If you are developing a module, which might be running on a web page, which also runs other modules, then you must beware the variable name overlapping.
+# 全局化
 
-Suppose we are developing a counter module:
+如果想开发一个模块，它可以在网页上运行或也可以运行其他模块，因此你必须注意变量名是否重复。
+
+假设我们正在卡开发一个计数器模块：
 ```js
 var myCounter = {
     number : 0,
@@ -13,6 +14,6 @@ var myCounter = {
     }
 }
 ```
-> ***Note:*** this technique is often used with closures, to make the internal state immutable from the outside.
+> ***注意:*** this 技巧通常用在闭包中，以使来自外部的内部状态不变。
 
-The module now takes only one variable name — `myCounter`. If any other module on the page makes use of such names like `number` or `isGreaterThanTen` then it's perfectly safe, because we will not override each others values;
+模块使用唯一一个变量名 — `myCounter`。如果其他模块使用名字比如`number` 或 `isGreaterThanTen` ，这样就会很安全，因为不会覆盖每个其他的值。

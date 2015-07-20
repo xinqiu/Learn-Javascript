@@ -1,5 +1,5 @@
-# Enumeration
-The `for in` statement can loop over all of the property names in an object. The enumeration will include functions and prototype properties.
+# 枚举
+`for in` 语句可以遍历对象中所有的属性。枚举包括函数和原型属性。
 ```js
 var fruit = {
     apple: 2,
