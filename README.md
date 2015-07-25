@@ -1,5 +1,8 @@
 # Learn Javascript
 
+-------------
+
+[![Build Status](https://travis-ci.org/xinqiu/Learn-Javascript.svg)](https://travis-ci.org/xinqiu/Learn-Javascript)
 
 这本书将教你Javascript编程的相关基础。不管你是菜鸟还是一个有经验的程序猿，这本书是为任何想学习Javascript编程的人而准备的。
 
