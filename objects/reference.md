@@ -1,9 +1,9 @@
 # 引用
-对象是**不可复制**的。它们的传递靠引用。
+对象是**不会被复制**的。它们的传递靠引用。
 ```js
  // 假设我有一个匹萨
 var myPizza = {slices: 5};
- // 然后我和你分析它
+ // 然后我和你分享它
 var yourPizza = myPizza;
  // 我吃了一小片
 myPizza.slices = myPizza.slices - 1;

@@ -1,7 +1,9 @@
 # 原型
+
 每个对象都与对象原型关联，继承了对象原型的属性。
 
-从文本对象（`{}`）创建的所有对象都自动链接到的Object.prototype，这个对象来自JavaScript标准。
+所有对象创建时都从字面量对象（`{}`）继承，且都自动链接到的Object.prototype，Object.prototype 来自JavaScript标准。
+
 
 当JavaScript解释器（在浏览器中一个模块），试图找到一个属性，它要检索，如下面的代码：
 ```js
@@ -26,7 +28,7 @@ adult.toString = function(){
 
 如果现在调用 `toString` 函数，解释器将发现一个新的对象中的属性然后停止。
 
-因此，通过深入原型，解释器检索第一个对象本身的属性。
+解释器解析某个属性时会先检查对象自己，再进一步检查他的原型。
 
 要设置自己的对象为原型而不是默认的Object.prototype，你可以调用以下的`Object.create`：
 

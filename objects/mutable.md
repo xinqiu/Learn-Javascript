@@ -1,5 +1,5 @@
 # 可变性
-对象与原始值不同之处在于**对象可以改变**，而原始值不可改变。
+对象与原始值不同之处在于**对象可以改变**，原始值是不可变的。
 ```js
 var myPrimitive = "first value";
     myPrimitive = "another value";
