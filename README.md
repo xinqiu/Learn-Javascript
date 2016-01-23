@@ -1,4 +1,4 @@
-# Learn Javascript
+# Javascript 导学
 
 -------------
 
